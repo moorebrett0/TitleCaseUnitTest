@@ -1,0 +1,16 @@
+<?php
+    class TitleCaseTests extends DrupalUnitTestCase {
+        public static function getInfo() {
+            return array(
+                'name' => 'Title Case unit tests',
+                'description' => 'Test that make_title_case works',
+                'group' => 'Aardvarkski',
+            );
+        }
+        function testMakeTitleCase() {
+            $result = make_title_case('slime');
+            $second = 'Slime';
+            $message = 'Should return "Slime"';
+            $this->assertEqual($result, $second, $message);
+        }
+}

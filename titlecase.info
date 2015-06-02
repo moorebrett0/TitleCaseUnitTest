@@ -1,0 +1,7 @@
+name = Title Case
+description = Converts string into Title Case
+package = Brett and Kyle's Creations
+core = 7.x
+files[] = titlecase.module
+files[] = titlecase.test
+dependencies[] = simpletest
